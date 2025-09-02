@@ -1,10 +1,10 @@
-import express, {Application } from 'express'
+import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
 import { errorMiddleware } from './middlewares/errorMiddleware'
 import chatRoutes from './routes/chatRoutes'
 
-const app :Application = express()
+const app :any= express() 
 
 app.use(express.json())
 app.use(cors())
